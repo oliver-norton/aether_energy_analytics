@@ -15,7 +15,7 @@ Functional requirements:
 
 Optional features:
 
-* [ ] Create ETL pipelines by connecting to airflow or another tool 
+* [ ] Create ELT pipelines by connecting to airflow or another tool 
 * [ ] Use social media or other data that is non-sensitive but unique
 * [ ] Make it unique or special
 

@@ -1,4 +1,0 @@
-Faker==1
-
-what other packages are important? 
-

@@ -1,9 +1,9 @@
-name: 'jaffle_shop'
+name: 'aether_energy_analytics'
 
 config-version: 2
 version: '0.1'
 
-profile: 'jaffle_shop'
+profile: 'aether_energy_analytics'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -24,7 +24,7 @@ seeds:
     node_color: '#cd7f32'
 
 models:
-  jaffle_shop:
+  aether_energy_analytics:
     materialized: table
     staging:
       materialized: view
