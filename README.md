@@ -13,7 +13,6 @@ Functional requirements:
 * [ ] Delete the data and database afterwards
 * [X] Accessible on github
 
-
 Optional features:
 
 * [ ] Create ETL pipelines by connecting to airflow or another tool 
@@ -50,5 +49,7 @@ Dockerfile = ???
 jaffleshop.duckdb
 
 profiles.yml = 
+
+
 
 
