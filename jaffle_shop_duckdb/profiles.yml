@@ -1,0 +1,14 @@
+jaffle_shop:
+
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'jaffle_shop.duckdb'
+      threads: 24
+      schema: 'testing'
+    prod:
+      type: duckdb
+      path: 'jaffle_shop.duckdb'
+      threads: 24
+      schema: 'prod'
