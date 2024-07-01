@@ -1,0 +1,1 @@
+ -- give instructions about how dbt should manage or organise the tables 
