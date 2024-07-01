@@ -6,10 +6,11 @@
 
 Functional requirements:
 
-* [ ] Generate fake data (Python)
-* [ ] Create a database (Python)
-* [ ] Create a dbt project (By hand)
-* [ ] Perform SQL queries on dbt (By hand, SQL)
+* [X] Generate fake data (extract) (Python)
+* [X] Create a database (load) (Python)
+* [ ] Create a dbt project (transform) (By hand)
+* [ ] Perform SQL queries on dbt (transform) (By hand, SQL)
+* [ ] Analyse the data and produce a report (Tableau)
 * [ ] Delete the data and database afterwards
 * [X] Accessible on github
 
