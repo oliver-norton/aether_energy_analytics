@@ -17,6 +17,7 @@ Functional requirements:
 Optional features:
 
 * [ ] Create ELT pipelines by connecting to airflow or another tool 
+* [ ] Connect to a cloud-based database like Redshift, Azure, Snowflake etc
 * [ ] Use social media or other data that is non-sensitive but unique
 * [ ] Make it unique or special
 

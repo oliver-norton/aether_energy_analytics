@@ -6,7 +6,7 @@ version: '0.1'
 profile: 'aether_energy_analytics'
 
 model-paths: ["models"]
-seed-paths: ["seeds"]
+# seed-paths: ["seeds"]
 test-paths: ["tests"]
 analysis-paths: ["analysis"]
 macro-paths: ["macros"]
@@ -19,16 +19,26 @@ clean-targets:
 
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
-seeds: 
-  +docs:
-    node_color: '#cd7f32'
+# seeds: 
+#   +docs:
+#     node_color: '#cd7f32'
 
 models:
   aether_energy_analytics:
-    materialized: table
-    staging:
-      materialized: view
-      +docs:
-        node_color: 'silver'
+    materialized: table  # Default materialization for models in this project
     +docs:
-      node_color: 'gold'
+      node_color: 'gold'  # Custom documentation color for all models in this project
+    staging:
+      materialized: view  # Materialization for staging models (can be overridden per model)
+      +docs:
+        node_color: 'silver'  # Custom documentation color for staging models
+        
+# models:
+#   aether_energy_analytics:
+#     materialized: table
+#     staging:
+#       materialized: view
+#       +docs:
+#         node_color: 'silver'
+#     +docs:
+#       node_color: 'gold'

@@ -1,14 +1,14 @@
-jaffle_shop:
+aether_energy_analytics:
 
   target: dev
   outputs:
     dev:
-      type: duckdb
-      path: 'aether_energy_analytics.duckdb'
+      type: sqlite
+      path: 'aether_energy_analytics.db'
       threads: 24
       schema: 'testing'
     prod:
-      type: duckdb
-      path: 'aether_energy_analytics.duckdb'
+      type: sqlite
+      path: 'aether_energy_analytics.db'
       threads: 24
       schema: 'prod'

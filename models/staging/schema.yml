@@ -1,0 +1,57 @@
+version: 2
+
+sources:
+  - name: aether_energy_analytics
+    schema: main  # Replace with the actual schema name if different
+    tables:
+      - name: energy_consumption
+      - name: customers
+      - name: customer_feedback
+
+models:
+  - name: stg_energy_consumption
+    description: "This table contains staged energy consumption data"
+    columns:
+      - name: timestamp
+        description: "Timestamp of energy consumption"
+        tests:
+          - not_null
+      - name: customer_id
+        description: "Foreign key to the customers table"
+        tests:
+          - not_null
+      - name: energy_usage
+        description: "Energy usage in kWh"
+        tests:
+          - not_null
+
+  - name: stg_customers
+    description: "This table contains staged customer data"
+    columns:
+      - name: customer_id
+        description: "Primary key for customers"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Name of the customer"
+      - name: age
+        description: "Age of the customer"
+      - name: region
+        description: "Region where the customer is located"
+
+  - name: stg_customer_feedback
+    description: "This table contains staged customer feedback data"
+    columns:
+      - name: timestamp
+        description: "Date of feedback"
+        tests:
+          - not_null
+      - name: customer_id
+        description: "Foreign key to the customers table"
+        tests:
+          - not_null
+      - name: rating
+        description: "Customer rating"
+        tests:
+          - not_null
