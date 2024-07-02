@@ -1,16 +1,47 @@
+
+## added in here a different layout as required by sqlite: https://docs.getdbt.com/docs/core/connect-data-platform/sqlite-setup
+ 
 aether_energy_analytics:
   target: dev
   outputs:
     dev:
       type: sqlite
-      path: 'aether_energy_analytics.db'
-      threads: 24
-      schema: 'testing'
+      threads: 1
+      database: 'database'
+      schema: 'main'
+      schemas_and_paths:
+        main: './aether_energy_analytics.db'
+      schema_directory: '.'
     prod:
       type: sqlite
-      path: 'aether_energy_analytics.db'
-      threads: 24
-      schema: 'prod'
+      threads: 1
+      database: 'database'
+      schema: 'main'
+      schemas_and_paths:
+        main: './aether_energy_analytics.db'
+      schema_directory: '.'
+
+# aether_energy_analytics:
+#   target: dev
+#   outputs:
+#     dev:
+#       type: sqlite
+#       path: 'aether_energy_analytics.db'
+#       database: 'database'
+#       schemas_and_paths:
+#         main: './aether_energy_analytics.db'
+#       schema_directory: '.'
+#       threads: 24
+#       schema: 'testing'
+#     prod:
+#       type: sqlite
+#       path: 'aether_energy_analytics.db'
+#       database: 'database'
+#             schemas_and_paths:
+#         main: './aether_energy_analytics.db'
+#       schema_directory: '.'
+#       threads: 24
+#       schema: 'prod'
 
 
 
