@@ -8,7 +8,7 @@ Functional requirements:
 
 * [X] Generate fake data (extract) (Python)
 * [X] Create a database (load) (Python)
-* [ ] Create a dbt project (transform) (By hand)
+* [X] Create a dbt project (transform) (By hand)
 * [ ] Perform SQL queries on dbt (transform) (By hand, SQL)
 * [ ] Analyse the data and produce a report (Tableau)
 * [ ] Delete the data and database afterwards
