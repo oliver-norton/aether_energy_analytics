@@ -1,25 +1,25 @@
 
 ## added in here a different layout as required by sqlite: https://docs.getdbt.com/docs/core/connect-data-platform/sqlite-setup
  
-aether_energy_analytics:
-  target: dev
-  outputs:
-    dev:
-      type: sqlite
-      threads: 1
-      database: 'database'
-      schema: 'main'
-      schemas_and_paths:
-        main: './aether_energy_analytics.db'
-      schema_directory: '.'
-    prod:
-      type: sqlite
-      threads: 1
-      database: 'database'
-      schema: 'main'
-      schemas_and_paths:
-        main: './aether_energy_analytics.db'
-      schema_directory: '.'
+# aether_energy_analytics:
+#   target: dev
+#   outputs:
+#     dev:
+#       type: sqlite
+#       threads: 1
+#       database: 'database'
+#       schema: 'main'
+#       schemas_and_paths:
+#         main: './aether_energy_analytics.db'
+#       schema_directory: '.'
+#     prod:
+#       type: sqlite
+#       threads: 1
+#       database: 'database'
+#       schema: 'main'
+#       schemas_and_paths:
+#         main: './aether_energy_analytics.db'
+#       schema_directory: '.'
 
 # aether_energy_analytics:
 #   target: dev
@@ -45,20 +45,20 @@ aether_energy_analytics:
 
 
 
-# aether_energy_analytics:
+aether_energy_analytics:
 
-#   target: dev
-#   outputs:
-#     dev:
-#       type: sqlite
-#       path: 'aether_energy_analytics.db'
-#       threads: 24
-#       schema: 'testing'
-#     prod:
-#       type: sqlite
-#       path: 'aether_energy_analytics.db'
-#       threads: 24
-#       schema: 'prod'
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'aether_energy_analytics.duckdb'
+      threads: 24
+      schema: 'testing'
+    prod:
+      type: duckdb
+      path: 'aether_energy_analytics.duckdb'
+      threads: 24
+      schema: 'prod'
 
 
 # passwords can be put in here

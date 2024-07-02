@@ -9,7 +9,7 @@ with source as (
 renamed as (
 
     select
-        feedback_date as timestamp,
+        feedback_date, --as timerstamp
         customer_id,
         rating
         -- note we are not including gender, just to make it interesting

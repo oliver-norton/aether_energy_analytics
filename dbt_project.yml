@@ -19,10 +19,6 @@ clean-targets:
 
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
-# seeds: 
-#   +docs:
-#     node_color: '#cd7f32'
-
 models:
   aether_energy_analytics:
     materialized: table
@@ -33,6 +29,11 @@ models:
     +docs:
       node_color: 'gold'
 
+
+
+# seeds: 
+#   +docs:
+#     node_color: '#cd7f32'
 
 # name: 'aether_energy_analytics'
 

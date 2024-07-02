@@ -1,9 +1,10 @@
 """The `version` module holds the version information for Pydantic."""
+
 from __future__ import annotations as _annotations
 
 __all__ = 'VERSION', 'version_info'
 
-VERSION = '2.7.4'
+VERSION = '2.8.0'
 """The version of Pydantic."""
 
 

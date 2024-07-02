@@ -1,12 +1,12 @@
 version: 2
 
-sources:
-  - name: aether_energy_analytics
-    schema: main  # Replace with the actual schema name if different
-    tables:
-      - name: energy_consumption
-      - name: customers
-      - name: customer_feedback
+# sources:
+#   - name: aether_energy_analytics
+#     schema: main  # Replace with the actual schema name if different
+#     tables:
+#       - name: energy_consumption
+#       - name: customers
+#       - name: customer_feedback
 
 models:
   - name: stg_energy_consumption
