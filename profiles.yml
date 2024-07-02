@@ -1,5 +1,4 @@
 aether_energy_analytics:
-
   target: dev
   outputs:
     dev:
@@ -12,3 +11,24 @@ aether_energy_analytics:
       path: 'aether_energy_analytics.db'
       threads: 24
       schema: 'prod'
+
+
+
+# aether_energy_analytics:
+
+#   target: dev
+#   outputs:
+#     dev:
+#       type: sqlite
+#       path: 'aether_energy_analytics.db'
+#       threads: 24
+#       schema: 'testing'
+#     prod:
+#       type: sqlite
+#       path: 'aether_energy_analytics.db'
+#       threads: 24
+#       schema: 'prod'
+
+
+# passwords can be put in here
+# usernames as well  
