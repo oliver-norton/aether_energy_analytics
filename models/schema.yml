@@ -1,7 +1,273 @@
-# sources:
-#   - name: aether_energy_analytics
-#     schema: main  # which schema am I referring to here???
-#     tables:
-#       - name: customers
-#       - name: energy_consumption
-#       - name: customer_feedback
+# This file should contain the transformed tables that we will have for production 
+# by default, when you do 'dbt run', it will only compile the testing. / staging models and schema
+# you need to specfically run for production to actually do the transformations 
+
+version: 2
+
+models:
+  - name: aggregated_feedback
+    description: "Aggregated customer feedback data including average rating and feedback count per customer."
+    columns:
+      - name: customer_id
+        description: "The unique identifier for a customer."
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: avg_rating
+        description: "The average rating given by the customer."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: feedback_count
+        description: "The total number of feedback entries for the customer."
+        tests:
+          - not_null
+
+  - name: monthly_consumption
+    description: "Monthly energy consumption data per customer."
+    columns:
+      - name: month
+        description: "The month of the energy consumption data."
+        tests:
+          - not_null
+      - name: customer_id
+        description: "The unique identifier for a customer."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: total_energy_usage
+        description: "The total energy usage in kWh for the month."
+        tests:
+          - not_null
+
+  - name: customer_profiles
+    description: "Comprehensive customer profile including demographics, feedback, and energy consumption data."
+    columns:
+      - name: customer_id
+        description: "The unique identifier for a customer."
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: customer_name
+        description: "The name of the customer."
+        tests:
+          - not_null
+      - name: age
+        description: "The age of the customer."
+        tests:
+          - not_null
+      - name: region
+        description: "The region where the customer is located."
+        tests:
+          - not_null
+      - name: avg_rating
+        description: "The average rating given by the customer."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: feedback_count
+        description: "The total number of feedback entries for the customer."
+        tests:
+          - not_null
+      - name: total_energy_usage
+        description: "The total energy usage in kWh for the customer."
+        tests:
+          - not_null
+
+
+
+
+# version: 2
+
+# models:
+#   - name: aggregated_feedback
+#     description: "Aggregated customer feedback data including average rating and feedback count per customer."
+#     columns:
+#       - name: customer_id
+#         description: "The unique identifier for a customer."
+#         tests:
+#           - unique
+#           - not_null
+#           - relationships:
+#               to: ref('stg_customers')
+#               field: customer_id
+#       - name: avg_rating
+#         description: "The average rating given by the customer."
+#         tests:
+#           - not_null
+#           - accepted_values:
+#               values: [1, 2, 3, 4, 5]
+#       - name: feedback_count
+#         description: "The total number of feedback entries for the customer."
+#         tests:
+#           - not_null
+
+#   - name: monthly_consumption
+#     description: "Monthly energy consumption data per customer."
+#     columns:
+#       - name: month
+#         description: "The month of the energy consumption data."
+#         tests:
+#           - not_null
+#       - name: customer_id
+#         description: "The unique identifier for a customer."
+#         tests:
+#           - not_null
+#           - relationships:
+#               to: ref('stg_customers')
+#               field: customer_id
+#       - name: total_energy_usage
+#         description: "The total energy usage in kWh for the month."
+#         tests:
+#           - not_null
+
+#   - name: customer_profiles
+#     description: "Comprehensive customer profile including demographics, feedback, and energy consumption data."
+#     columns:
+#       - name: customer_id
+#         description: "The unique identifier for a customer."
+#         tests:
+#           - unique
+#           - not_null
+#           - relationships:
+#               to: ref('stg_customers')
+#               field: customer_id
+#       - name: customer_name
+#         description: "The name of the customer."
+#         tests:
+#           - not_null
+#       - name: age
+#         description: "The age of the customer."
+#         tests:
+#           - not_null
+#           ###  this needs to be fixed 
+#           # - accepted_values:   
+#           #     min_value: '1'
+#           #     max_value: '120'
+#       # - name: gender
+#       #   description: "The gender of the customer."
+#       #   tests:
+#       #     - not_null
+#       #     - accepted_values:
+#       #         values: ['Male', 'Female', 'Other']
+#       - name: region
+#         description: "The region where the customer is located."
+#         tests:
+#           - not_null
+#       - name: avg_rating
+#         description: "The average rating given by the customer."
+#         tests:
+#           - not_null
+#           - accepted_values:
+#               values: [1, 2, 3, 4, 5]
+#       - name: feedback_count
+#         description: "The total number of feedback entries for the customer."
+#         tests:
+#           - not_null
+#       - name: total_energy_usage
+#         description: "The total energy usage in kWh for the customer."
+#         tests:
+#           - not_null
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# models:
+#   - name: aggregated_feedback
+#     description: "average ratings and count of feedback per customer."
+#     columns:
+#       - name: customer_id
+#         description: "Foreign key to the customers table"
+#         tests:
+#           - not_null
+#       - name: avg_rating
+#         description: "average rating per customer"
+#         tests:
+#           - not_null
+#       - name: feedback_count
+#         description: "how much feedback by customer"
+#         tests:
+#           - not_null
+#   - name: monthly_consumption
+#     description: "average ratings and count of feedback per customer."
+#     columns:
+#       - name: month
+#         description: "Foreign key to the customers table"
+#         tests:
+#           - not_null
+#       - name: customer_id
+#         description: "average rating per customer"
+#         tests:
+#           - not_null
+#       - name: total_energy_usage
+#         description: "how_much_feedback_by_customer"
+#         tests:
+#           - not_null
+          
+#   - name: stg_energy_consumption
+#     description: "This table contains staged energy consumption data"
+#     columns:
+#       - name: timestamp
+#         description: "Timestamp of energy consumption"
+#         tests:
+#           - not_null
+#       - name: customer_id
+#         description: "Foreign key to the customers table"
+#         tests:
+#           - not_null
+#       - name: energy_usage
+#         description: "Energy usage in kWh"
+#         tests:
+#           - not_null
+
+#   - name: stg_customers
+#     description: "This table contains staged customer data"
+#     columns:
+#       - name: customer_id
+#         description: "Primary key for customers"
+#         tests:
+#           - unique
+#           - not_null
+#       - name: name
+#         description: "Name of the customer"
+#       - name: age
+#         description: "Age of the customer"
+#       - name: region
+#         description: "Region where the customer is located"
+
+
+

@@ -6,14 +6,13 @@ with source as (
 
 ),
 
+-- this could also be considered as 'cleaning' renaming columns, selecting only some columns etc. 
 renamed as (
 
     select
         feedback_date--as timerstamp
-        -- customer_id,
-        -- rating
-        -- -- note we are not including gender, just to make it interesting
-
+        customer_id,
+        rating
     from source
 
 )
