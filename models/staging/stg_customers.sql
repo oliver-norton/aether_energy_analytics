@@ -8,12 +8,14 @@ with source as (
 renamed as (
 
     select
-        customer_id,
-        customer_name, --as namer,
-        age,
-        region
+        customer_id
+        -- customer_name, --as namer,
+        -- age,
+        -- region
         -- note we are not including gender, just to make it interesting
 
     from source
 
 )
+
+select * from renamed

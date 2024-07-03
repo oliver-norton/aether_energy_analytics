@@ -9,10 +9,12 @@ with source as (
 renamed as (
 
     select
-        timestamp,
-        customer_id,
-        energy_usage_kWh as energy_usage
+        -- timestamp,
+        -- customer_id
+       energy_usage_kWh
 
     from source
 
 )
+
+select * from renamed
