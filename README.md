@@ -9,21 +9,19 @@ Functional requirements:
 * [X] Generate fake data (extract) (Python)
 * [X] Create a database (load) (Python)
 * [X] Create a dbt project (transform) (By hand)
-* [ ] Perform SQL queries on dbt (transform) (By hand, SQL)
-* [ ] Analyse the data and produce a report (Tableau)
+* [X] Perform SQL queries on dbt (transform) (By hand, SQL)
+* [X] Analyse the data and produce a report (Tableau)
 * [ ] Delete the data and database afterwards
 * [X] Accessible on github
 
 Optional features:
 
-* [ ] Create ELT pipelines by connecting to airflow or another tool 
+* [ ] Connect to airflow or another tool 
 * [ ] Connect to a cloud-based database like Redshift, Azure, Snowflake etc
-* [ ] Use social media or other data that is non-sensitive but unique
-* [ ] Make it unique or special
+* [ ] Do a data science or deeper analysis
+* [ ] Automate the whole process with bat files or other approach - so .py files run automatically 
 
 Learning goals:
-- 
-
 
 Folder structure:
 jaffle_shop_duck_db - folder for database + scripts + environment 
