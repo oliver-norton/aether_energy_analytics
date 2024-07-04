@@ -14,7 +14,9 @@ select
     cf.avg_rating,
     cf.feedback_count
 from customer_feedback cf
-join {{ ref('stg_customers') }} sc on cf.customer_id = sc.customer_id;
+join {{ ref('stg_customers') }} sc on cf.customer_id = sc.customer_id
+
+-- ; removed
 
 
 

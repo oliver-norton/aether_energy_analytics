@@ -8,7 +8,7 @@ with source as (
 renamed as (
 
     select
-        customer_id
+        customer_id,
         customer_name, --as namer,
         age,
         region

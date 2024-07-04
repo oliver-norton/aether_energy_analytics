@@ -10,7 +10,7 @@ with source as (
 renamed as (
 
     select
-        feedback_date--as timerstamp
+        feedback_date,--as timerstamp
         customer_id,
         rating
     from source

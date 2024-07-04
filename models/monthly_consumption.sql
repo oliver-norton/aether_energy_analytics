@@ -14,7 +14,9 @@ select
     c.customer_id,
     c.total_energy_usage
 from consumption c
-join {{ ref('stg_customers') }} sc on c.customer_id = sc.customer_id;
+join {{ ref('stg_customers') }} sc on c.customer_id = sc.customer_id
+
+-- removed ; 
 
 
 

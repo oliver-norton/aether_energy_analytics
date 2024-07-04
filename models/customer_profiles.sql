@@ -28,7 +28,9 @@ select
     c.total_energy_usage
 from {{ ref('stg_customers') }} sc
 left join customer_feedback cf on sc.customer_id = cf.customer_id
-left join consumption c on sc.customer_id = c.customer_id;
+left join consumption c on sc.customer_id = c.customer_id
+
+-- remove ;
 
 
 

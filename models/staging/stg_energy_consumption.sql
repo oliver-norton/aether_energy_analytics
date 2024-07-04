@@ -10,7 +10,7 @@ renamed as (
 
     select
         timestamp,
-        customer_id
+        customer_id,
        energy_usage_kWh
 
     from source
