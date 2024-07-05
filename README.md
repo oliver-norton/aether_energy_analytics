@@ -16,7 +16,7 @@ The project I have made incorporates this whole process. Here are steps in the p
 
 (3) Create staging schema for the data, and staging models files 
 - Model files and schema are used to structure the data before full transformation occurs 
-- Model files contain sql queries to manipulate the tables 
+- Model files contain SQL queries to manipulate the tables 
 
 (4) Create schema and models 
 - Transformation of the tables, including joining and filtering using SQL queries 
