@@ -1,6 +1,6 @@
 # Welcome to my github repository ‘Aether Energy Analytics’
 
-Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an analytics engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by data analysts and BI specialists.
+Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an Analytics Engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by data analysts and BI specialists.
 
 The project I have made incorporates this whole process. Here are steps in the project:
 
