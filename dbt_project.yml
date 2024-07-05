@@ -6,7 +6,7 @@ version: '0.1'
 profile: 'aether_energy_analytics'
 
 model-paths: ["models"]
-# seed-paths: ["seeds"]
+# seed-paths: ["seeds"]  # seeds is only if you have local csv files which you're pulling from 
 test-paths: ["tests"]
 analysis-paths: ["analysis"]
 macro-paths: ["macros"]

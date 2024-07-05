@@ -1,29 +1,109 @@
 # dbt_example
-- PROJECT GOALS 
 
-- Name: dbt_project_learning
-- Deadline: 05/07/2024
+# Welcome to my github repository ‘Aether Energy Analytics’
 
-Functional requirements:
+Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an analytics engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data quality and reliability so that actionable insights can be extracted by data analysts and BI specialists.
 
-* [X] Generate fake data (extract) (Python)
-* [X] Create a database (load) (Python)
-* [X] Create a dbt project (transform) (By hand)
-* [X] Perform SQL queries on dbt (transform) (By hand, SQL)
-* [X] Analyse the data and produce a report (Tableau)
-* [ ] Delete the data and database afterwards
-* [X] Accessible on github
+The project I have made incorporates this whole process. Here are steps in the project:
 
-Optional features:
+(1) Create a dbt project 
+Creating a virtual environment for running Python and operating dbt (aether_env)
+Set up profiles.yml file to configure production and testing versions for the project 
+Set up dbt_project.yml to configure the settings of the dbt project  
 
-* [ ] Connect to airflow or another tool 
-* [ ] Connect to a cloud-based database like Redshift, Azure, Snowflake etc
-* [ ] Do a data science or deeper analysis
-* [ ] Automate the whole process with bat files or other approach - so .py files run automatically 
+(2) Write a Python script to create fake data and store it in a database
+Generate several tables containing the type of data an energy company might have
+The data isn’t necessarily clean, with some parts having the wrong type of data 
+Using duckdb, but in a real case this would be using a cloud-based equivalent provided by Azure, AWS, GCP 
 
-Learning goals:
+(3) Create staging schema for the data, and staging models files 
+Model files and schema are used to structure the data before full transformation occurs 
+Model files contain sql queries to manipulate the tables 
 
-Folder structure:
+(4) Create schema and models 
+Transformation of the tables, including joining and filtering using SQL queries 
+Schema file contains tests to ensure data integrity (such as being only a number, not null. Also tests relationships)
+
+(5) Testing and executing the ELT pipeline 
+Use dbt to test if the schemas are valid, the models are valid, the data in the database passes the tests. Dbt also tests relationships (e.g. Customer ID) across tables
+Once tests are passed, then production profile can be run and the database is transformed 
+
+(6) Connecting to data analytics platform for analysts 
+In this case, I have attempted to connect the github repository, with the database file to Tableau, since it didn’t work I have instead exported the tables to Excel files 
+In normal production, this would be a connection with an Azure, AWS, GCP product 
+To show proof of concept, I have created a simple Tableau dashboard using the transformed data which you can view and interact with here: LINK LINK LINK LINK 
+
+
+
+
+
+
+
+
+
+
+Glossary 
+
+./aether_env/ 
+Environment to run dbt and python code 
+
+./logs/ 
+Dbt generated logs 
+
+./models/ 
+Schema and dbt (.sql) models for transformation of data
+
+./models/staging/ 
+Schema and dbt (.sql) models for initial minor changes to data, before full transformation 
+
+./output/ 
+Exported csv and xlsx files for importing into Tableau 
+
+./scripts/ 
+In depth code used to build project and process. Code to create and store data in db. Code to setup tableau web data connector 
+
+./target/ ??????????????????????? 
+dbt generated folder. Contains files related to the target, which is what dbt is perfomring operations on - in this case, aether_energy_analytics.duckdb 
+
+devcontainer.json ?????????????????????
+
+.user.yml ????????????????/
+
+1.7.3 ??????????????????????????
+
+Dockerfile ??????????????????????????????????????
+Its a way to create an image of some software, in this case, python3.9 to be able to run our code in. We are using the dockerfile to install the packages for our environment in python. 
+https://docs.docker.com/reference/dockerfile/#environment-replacement
+
+
+profiles.yml 
+Production vs testing profiles needed for dbt so you can test your models before production 
+
+dbt_project.yml
+Configuration settings for dbt project 
+
+aether_energy_analytics.duckdb 
+Database for the project 
+
+requirements.txt
+Used for installing the environment aether_env. One time use.
+
+requirements.in 
+Additional requirements for duckdb 
+
+requirements-dev.txt ??????????????????????????????????????????????????????
+
+.gitinore ???????????????????????????
+
+.vscode ????????????
+
+.github\workflows validate_on_platforms.yml ??????????????
+something to do with github connection?
+
+
+
+
+<!-- Folder structure:
 jaffle_shop_duck_db - folder for database + scripts + environment 
 github = github stuff
 .vscode = vscode stuff 
@@ -48,8 +128,32 @@ Dockerfile = ???
 
 jaffleshop.duckdb
 
-profiles.yml = 
+profiles.yml =  -->
 
 
 
 
+<!-- - PROJECT GOALS 
+
+- Name: dbt_project_learning
+- Deadline: 05/07/2024
+- Completed: 05/07/2024 (Functional but not clean)
+
+Functional requirements:
+
+* [X] Generate fake data (extract) (Python)
+* [X] Create a database (load) (Python)
+* [X] Create a dbt project (transform) (By hand)
+* [X] Perform SQL queries on dbt (transform) (By hand, SQL)
+* [X] Analyse the data and produce a report (Tableau)
+* [ ] Delete the data and database afterwards
+* [X] Accessible on github
+
+Optional features:
+
+* [ ] Connect to airflow or another tool 
+* [ ] Connect to a cloud-based database like Redshift, Azure, Snowflake etc
+* [ ] Do a data science or deeper analysis
+* [ ] Automate the whole process with bat files or other approach - so .py files run automatically 
+
+Learning goals: -->
