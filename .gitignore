@@ -9,3 +9,6 @@ venv/
 env/
 **/*.duckdb
 **/*.duckdb.wal
+.vscode/
+
+
