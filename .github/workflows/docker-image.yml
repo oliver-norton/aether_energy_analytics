@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build --rm -t aether_energy_analytics .
     - name: run dbt 
-      run: docker container run aether_energy_analytics --rm
+      run: docker run --rm aether_energy_analytics
