@@ -12,7 +12,10 @@ COPY scripts /code/scripts/
 WORKDIR /code/
 RUN python /scripts/create_db.py
 RUN ls 
-CMD ["dbt","build"]
+RUN chmod +x /scripts/run.sh 
+#^ this is prepared/setup as an image with docker build command
+#v this is run in docker run command 
+CMD ["/scripts/run.sh"]
 
 # docker build --rm -t aether_energy_analytics .
 
