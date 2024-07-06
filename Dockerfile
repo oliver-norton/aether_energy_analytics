@@ -1,13 +1,16 @@
 FROM python:3.9-alpine
 
-COPY requirements.txt dbt_project.yml profiles.yml aether_energy_analytics.duckdb .user.yml /code/
+COPY requirements.txt dbt_project.yml profiles.yml .user.yml /code/
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --requirement /code/requirements.txt
 
 COPY models /code/models/
+COPY scripts /code/scripts/ 
+# we copy whole folders here 
 
 WORKDIR /code/
+RUN python /scripts/create_db.py
 RUN ls 
 CMD ["dbt","build"]
 

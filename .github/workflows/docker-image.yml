@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      name: Checkout
+      name: Checkout  
     - name: Build the Docker image
       run: docker build --rm -t aether_energy_analytics .
     - name: run dbt 
