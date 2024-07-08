@@ -10,9 +10,9 @@ COPY scripts /code/scripts/
 # we copy whole folders here 
 
 WORKDIR /code/
-RUN python /scripts/create_db.py
+RUN python /scripts/generate_database.py
 RUN ls 
-RUN chmod +x /scripts/run.sh 
+# RUN chmod +x /scripts/run.sh 
 #^ this is prepared/setup as an image with docker build command
 #v this is run in docker run command 
 CMD ["/scripts/run.sh"]
