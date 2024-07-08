@@ -1,4 +1,5 @@
-FROM python:3.9-alpine
+# FROM python:3.9-alpine - changed to match local machine 
+FROM python:3.8.8-alpine
 
 COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in /code/
 
@@ -15,7 +16,7 @@ RUN ls
 # RUN chmod +x /scripts/run.sh 
 #^ this is prepared/setup as an image with docker build command
 #v this is run in docker run command 
-CMD ["/scripts/run.sh"]
+# CMD ["/scripts/run.sh"]
 
 # docker build --rm -t aether_energy_analytics .
 
