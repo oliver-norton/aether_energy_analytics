@@ -9,7 +9,7 @@ with source as (
 renamed as (
 
     select
-        timestamp,
+        consumed_at,
         customer_id,
        energy_usage_kWh
 

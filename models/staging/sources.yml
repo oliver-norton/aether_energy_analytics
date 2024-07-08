@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: aether_energy_analytics
+    schema: main  # which schema am I referring to here???
+    tables:
+      - name: customer_feedback
+      - name: customers
+      - name: energy_consumption

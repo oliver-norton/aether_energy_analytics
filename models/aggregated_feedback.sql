@@ -18,24 +18,3 @@ join {{ ref('stg_customers') }} sc on cf.customer_id = sc.customer_id
 
 -- ; removed
 
-
-
-
-
-
-
-
-
-
--- with feedback as (
---     select * from {{ ref('stg_customer_feedback') }}
--- )
--- , aggregated_feedback as (
---     select
---         customer_id,
---         avg(rating) as avg_rating,
---         count(*) as feedback_count
---     from feedback
---     group by customer_id
--- )
--- select * from aggregated_feedback;

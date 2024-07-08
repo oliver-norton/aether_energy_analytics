@@ -1,6 +1,6 @@
 FROM python:3.9-alpine
 
-COPY requirements.txt dbt_project.yml profiles.yml .user.yml /code/
+COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in /code/
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --requirement /code/requirements.txt

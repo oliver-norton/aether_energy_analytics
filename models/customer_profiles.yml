@@ -1,0 +1,44 @@
+# This file should contain the transformed tables that we will have for production 
+# by default, when you do 'dbt run', it will only compile the testing. / staging models and schema
+# you need to specfically run for production to actually do the transformations 
+
+version: 2
+
+models:
+  - name: customer_profiles
+    description: "Comprehensive customer profile including demographics, feedback, and energy consumption data."
+    columns:
+      - name: customer_id
+        description: "The unique identifier for a customer."
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: customer_name
+        description: "The name of the customer."
+        tests:
+          - not_null
+      - name: age
+        description: "The age of the customer."
+        tests:
+          - not_null
+      - name: region
+        description: "The region where the customer is located."
+        tests:
+          - not_null
+      - name: avg_rating
+        description: "The average rating given by the customer."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1, 2, 3, 4, 5]
+      - name: feedback_count
+        description: "The total number of feedback entries for the customer."
+        tests:
+          - not_null
+      - name: total_energy_usage
+        description: "The total energy usage in kWh for the customer."
+        tests:
+          - not_null

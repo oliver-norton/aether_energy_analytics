@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_energy_consumption
+    # description: "Raw energy consumption data"
+    columns:
+      - name: consumed_at
+        description: "The timestamp of the energy consumption reading"
+      - name: customer_id
+        description: "The unique identifier for a customer"
+        tests:
+          - not_null
+      - name: energy_usage_kWh
+        description: "The amount of energy used in kWh"
+        tests:
+          - not_null

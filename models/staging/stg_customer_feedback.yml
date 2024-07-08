@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_customer_feedback
+    # description: "Raw customer feedback data"
+    columns:
+      - name: feedback_date
+        description: "The date the feedback was given"
+      - name: customer_id
+        description: "The unique identifier for a customer"
+        tests:
+          - not_null
+      - name: rating
+        description: "The rating given by the customer"
+        tests:
+          - not_null
+      - name: comments
+        description: "Comments given by the customer"

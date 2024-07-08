@@ -1,0 +1,25 @@
+# This file should contain the transformed tables that we will have for production 
+# by default, when you do 'dbt run', it will only compile the testing. / staging models and schema
+# you need to specfically run for production to actually do the transformations 
+
+version: 2
+
+models:
+  - name: monthly_consumption
+    description: "Monthly energy consumption data per customer."
+    columns:
+      - name: month
+        description: "The month of the energy consumption data."
+        tests:
+          - not_null
+      - name: customer_id
+        description: "The unique identifier for a customer."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: total_energy_usage
+        description: "The total energy usage in kWh for the month."
+        tests:
+          - not_null
