@@ -215,4 +215,7 @@ zipp==3.17.0
     #   importlib-metadata
     #   importlib-resources
 faker==26.0.0
+pandas==2.2.2
+numpy==2.0.0
+
 

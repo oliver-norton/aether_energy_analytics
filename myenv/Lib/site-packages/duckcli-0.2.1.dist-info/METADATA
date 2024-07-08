@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: duckcli
+Version: 0.2.1
+Summary: CLI for DuckDB with auto-completion and syntax highlighting.
+Home-page: https://github.com/dbcli/duckcli
+Author: dbcli
+Author-email: amjith.r@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: duckdb (>=0.4.0)
+Requires-Dist: click (>=4.1)
+Requires-Dist: Pygments (>=1.6)
+Requires-Dist: prompt-toolkit (<4.0.0,>=3.0.3)
+Requires-Dist: sqlparse
+Requires-Dist: configobj (>=5.0.5)
+Requires-Dist: cli-helpers[styles] (>=2.2.1)
+
+# duckcli
+
+A command-line client for DuckDB databases that has auto-completion and syntax highlighting.
+
+![Completion](screenshots/duckcli.png)
+
+## Installation
+
+You can install it via pip:
+
+```
+$ pip install -U duckcli
+```
+
+## Usage
+
+```
+$ duckcli --help
+
+Usage: duckcli [OPTIONS] [DATABASE]
+
+Examples:
+  - duckcli duckdb_filename
+```
+
+A config file is automatically created at `~/.config/duckcli/config` at first launch. For Windows machines a config file is created at `~\AppData\Local\dbcli\duckcli\config` at first launch. See the file itself for a description of all available options.
+
+
