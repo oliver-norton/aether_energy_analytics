@@ -37,21 +37,23 @@ This repository contains the necessary components to run the project manually or
   4  2023-01-05            15          33.538603
 ```
   **Customer Feedback Table:**
+  ```plain text
   feedback_date  customer_id  rating  comments
 0    2023-01-01           28       4  General I particular someone.
 1    2023-01-08           46       2  Painting food nothing land deep by.
 2    2023-01-15            8       3  Rock seven visit team. Stuff service play dark.
 3    2023-01-22           40       5  Develop kid design human why.
 4    2023-01-29           22       4  Picture perform carry.
-
+```
 **Customers Table:**
+```plain text
    customer_id      customer_name  age  gender  region
 0            1          David Lee   69    Male    West
 1            2  Jessica Hernandez   25    Male    East
 2            3        Noah Robles   28  Female    West
 3            4         Julie Hood   28  Female    West
 4            5  Ashley Richardson   64    Male   South
-
+```
 - The data is stored in duckdb as aether_energy_analytics.duckdb.
 
 #### 2.View the Database
