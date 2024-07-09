@@ -16,7 +16,7 @@ COPY scripts /code/scripts/
 WORKDIR /code/
 RUN ls
 RUN ls /code/scripts
-RUN python /scripts/generate_database.py
+RUN python /code/scripts/generate_database.py
 RUN ls 
 # RUN chmod +x /scripts/run.sh 
 #^ this is prepared/setup as an image with docker build command
