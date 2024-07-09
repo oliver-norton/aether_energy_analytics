@@ -13,6 +13,8 @@ COPY scripts /code/scripts/
 # we copy whole folders here 
 
 WORKDIR /code/
+RUN ls
+RUN ls /scripts
 RUN python /scripts/generate_database.py
 RUN ls 
 # RUN chmod +x /scripts/run.sh 
