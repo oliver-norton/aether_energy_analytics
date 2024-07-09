@@ -146,6 +146,8 @@ Automate the process using GitHub Actions and Docker. The CI (continuous integra
 
 Steps:
 - Select ‘Actions’ in GitHub.
+
+![actions](./images/actions.png)
 - Select Docker Image CI.
 - Select 'Run workflow'.
 - Refresh the page and open the run to see the steps.
