@@ -1,6 +1,6 @@
 # Welcome to my ‘Aether Energy Analytics’ dbt Project
 
-Aether Energy is a fictional energy company with a database of customer data. This project is designed to handle the Extract, Load, and Transform (ELT) process to structure data for high data integrity, enabling actionable insights for Data Analysts and BI Specialists.
+Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an Analytics Engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
 
 ## Project Overview
 
