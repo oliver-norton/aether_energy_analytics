@@ -2,14 +2,24 @@
 
 Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an Analytics Engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
 
+How to run the dockerfile using GitHub Actions:
+1. Open github actions 
+![alt text](./images/actions.png)
+Select Docker Image CI 
+Select 'Run workflow'
+Refresh the page
+Open the run, and click through 'build' to see the steps in the process being done by the dockerfile and the docker image
+
+
+
 The project I have made incorporates this whole process. Here are steps in the project:
 
-(1) Create a dbt project 
-- Creating a virtual environment for running Python and operating dbt (aether_env)
+(1) Create a dbt project (/aether_energy_analytics/)
+- Creating a virtual environment for running Python and operating dbt 
 - Set up profiles.yml file to configure production and testing versions for the project 
 - Set up dbt_project.yml to configure the settings of the dbt project  
 
-(2) Write a Python script to create fake data and store it in a database
+(2) Write a Python script to create fake data and store it in a database (./scripts/generate_database.py)
 - Generate several tables containing the type of data an energy company might have
 - The data isn’t necessarily clean, with some parts having the wrong type of data 
 - Using duckdb, but in a real case this would be using a cloud-based equivalent provided by Azure, AWS, GCP 
@@ -30,6 +40,8 @@ The project I have made incorporates this whole process. Here are steps in the p
 - In this case, I have attempted to connect the github repository, with the database file to Tableau, since it didn’t work I have instead exported the tables to Excel files 
 - In normal production, this would be a connection with an Azure, AWS, GCP product 
 - To show proof of concept, I have created a simple Tableau dashboard using the transformed data which you can view and interact with here: LINK LINK LINK LINK 
+
+
 
 
 ## Glossary

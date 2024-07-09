@@ -1,9 +1,7 @@
 FROM python:3.9-alpine 
-#- changed to match local machine 
-# FROM python:3.8.8-alpine
+# matches testeing on local machine 
 
 COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in requirements-dev.txt /code/
-# generate_database.py
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --requirement /code/requirements.txt
@@ -21,11 +19,10 @@ RUN ls
 # RUN chmod +x /scripts/run.sh 
 #^ this is prepared/setup as an image with docker build command
 #v this is run in docker run command 
-# CMD ["/scripts/run.sh"]
+# CMD ["/scripts/run.sh"] - optional
 
 # docker build --rm -t aether_energy_analytics .
 
-# what is ls
 
 
 
