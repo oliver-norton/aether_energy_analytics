@@ -50,7 +50,7 @@ The project I have made incorporates this whole process. Here are steps in the p
   Exported CSV and XLSX files for importing into Tableau
 
 - **./scripts/**
-  In-depth code used to build project and process. Code to create and store data in db. Code to setup Tableau web data connector
+  Code to 
 
 - **./target/**
   dbt generated folder. Contains files related to the target, which is what dbt is performing operations on - in this case, aether_energy_analytics.duckdb

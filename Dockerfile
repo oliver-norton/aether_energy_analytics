@@ -2,7 +2,7 @@ FROM python:3.9-alpine
 #- changed to match local machine 
 # FROM python:3.8.8-alpine
 
-COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in /code/
+COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in requirements-dev.txt /code/
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --requirement /code/requirements.txt
