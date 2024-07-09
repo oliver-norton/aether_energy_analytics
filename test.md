@@ -140,14 +140,14 @@ COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL
 
 Automate the process using GitHub Actions and Docker. The CI (continuous integration) pipeline automates:
 
-- a. Creating the environment.
-- b. Executing the create database Python script.
-- c. Running dbt.
+- Creating the environment.
+- Executing the create database Python script.
+- Running dbt.
 
 Steps:
-    Select ‘Actions’ in GitHub.
-    Select Docker Image CI.
-    Select 'Run workflow'.
-    Refresh the page and open the run to see the steps.
+- Select ‘Actions’ in GitHub.
+- Select Docker Image CI.
+- Select 'Run workflow'.
+- Refresh the page and open the run to see the steps.
 
 The .github/workflows/docker-image.yml contains the GitHub Actions workflow, while the Dockerfile contains the commands required to build and run the Docker image, including copying files, installing packages, and executing the Python script.
