@@ -28,13 +28,14 @@ This repository contains the necessary components to run the project manually or
 - Example data tables:
 
   **Energy Consumption Table:**
+```plain text
      consumed_at  customer_id  energy_usage_kWh
   0  2023-01-01            36          37.017563
   1  2023-01-02            21          19.991851
   2  2023-01-03            18          22.528733
   3  2023-01-04            28          48.616649
   4  2023-01-05            15          33.538603
-
+```
   **Customer Feedback Table:**
   feedback_date  customer_id  rating  comments
 0    2023-01-01           28       4  General I particular someone.
