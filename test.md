@@ -131,9 +131,10 @@ COPY testing.customer_profiles TO 'customer_profiles.xlsx' WITH (FORMAT GDAL, DR
 COPY testing.aggregated_feedback TO 'aggregated_feedback.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
 COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
 ```
-- View and interact with the Tableau dashboard: URL HERE https://public.tableau.com/app/profile/john.stokes8166/viz/AetherEnergyAnalytics/aether_2020-2024#1
+- View and interact with the Tableau dashboard: [URL HERE](https://public.tableau.com/app/profile/john.stokes8166/viz/AetherEnergyAnalytics/aether_2020-2024#1)
 
-IMAGE IMAGE IMAGE 
+![Tableau Dashboard](./images/tableau_dash.png)
+
 
 ### B. Run Using Docker
 
