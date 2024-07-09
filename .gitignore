@@ -10,5 +10,6 @@ env/
 **/*.duckdb
 **/*.duckdb.wal
 .vscode/
+myenv/
 
 
