@@ -1,7 +1,8 @@
 FROM python:3.9-alpine 
 # matches testeing on local machine 
 
-COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in requirements-dev.txt /code/
+COPY requirements.txt dbt_project.yml profiles.yml  requirements.in requirements-dev.txt /code/
+# .user.yml
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --requirement /code/requirements.txt
