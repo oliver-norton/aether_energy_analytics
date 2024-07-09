@@ -147,9 +147,10 @@ Automate the process using GitHub Actions and Docker. The CI (continuous integra
 Steps:
 - Select ‘Actions’ in GitHub.
 
-![actions](./images/actions.png)
+![Actions](./images/actions.png)
 - Select Docker Image CI.
 - Select 'Run workflow'.
 - Refresh the page and open the run to see the steps.
+![Docker](./images/docker.png)
 
 The .github/workflows/docker-image.yml contains the GitHub Actions workflow, while the Dockerfile contains the commands required to build and run the Docker image, including copying files, installing packages, and executing the Python script.
