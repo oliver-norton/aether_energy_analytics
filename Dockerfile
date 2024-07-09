@@ -3,6 +3,7 @@ FROM python:3.9-alpine
 # FROM python:3.8.8-alpine
 
 COPY requirements.txt dbt_project.yml profiles.yml .user.yml requirements.in requirements-dev.txt /code/
+# generate_database.py
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --requirement /code/requirements.txt
@@ -14,7 +15,7 @@ COPY scripts /code/scripts/
 
 WORKDIR /code/
 RUN ls
-RUN ls /scripts
+RUN ls /code/scripts
 RUN python /scripts/generate_database.py
 RUN ls 
 # RUN chmod +x /scripts/run.sh 
