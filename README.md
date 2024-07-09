@@ -2,7 +2,7 @@
 
 Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an Analytics Engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
 
-![Workflow](./images/workflow.png)
+<img src="./images/workflow.png" width="50%" />
 
 ## Project Overview
 
