@@ -16,9 +16,9 @@ This repository contains the necessary components to run the project manually or
   source myenv/bin/activate  # On Windows use: myenv\Scripts\activate.bat
   pip install -r requirements.txt
 
-**Configure dbt**:
-- Set up `profiles.yml` to configure production and testing versions for the project.
-- Set up `dbt_project.yml` to configure the settings of the dbt project.
+- **Configure dbt**:
+ - Set up `profiles.yml` to configure production and testing versions for the project.
+ - Set up `dbt_project.yml` to configure the settings of the dbt project.
 
 
 #### 2. Generate Fake Data (`./scripts/generate_database.py`)
@@ -131,7 +131,7 @@ COPY testing.customer_profiles TO 'customer_profiles.xlsx' WITH (FORMAT GDAL, DR
 COPY testing.aggregated_feedback TO 'aggregated_feedback.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
 COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');
 ```
-- View and interact with the Tableau dashboard: [URL HERE](https://public.tableau.com/app/profile/john.stokes8166/viz/AetherEnergyAnalytics/aether_2020-2024#1)
+- View and interact with the Tableau dashboard I created using the data [HERE](https://public.tableau.com/app/profile/john.stokes8166/viz/AetherEnergyAnalytics/aether_2020-2024#1)
 
 ![Tableau Dashboard](./images/tableau_dash.png)
 
