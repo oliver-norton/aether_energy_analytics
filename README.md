@@ -2,7 +2,7 @@
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <div style="flex: 1;">
-    Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs an Analytics Engineer to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
+    Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs someone to extract, load and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
   </div>
   <div>
     <img src="./images/workflow.png" alt="drawing" width="300"/>
