@@ -63,7 +63,7 @@ This repository contains the necessary components to run the project manually or
 ```
 - The data is stored in duckdb as aether_energy_analytics.duckdb.
 
-#### 2.View the Database
+#### 3. View the Database
 
 - Use duckcli to view and query the database:
 ```bash
@@ -144,7 +144,7 @@ COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL
 
 </details>
 <details>
-### B. Run Using Docker
+<details><strong>B. Run Using Docker</strong></details>
 
 Automate the process using GitHub Actions and Docker. The CI (continuous integration) pipeline automates:
 
