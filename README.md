@@ -7,7 +7,7 @@
   </div>
   <div style="display: flex; flex-direction: column; align-items: center;">
     <div>
-      <img src="./images/workflow.png" alt="Workflow Diagram" width="400"/>
+      <img src="./images/workflow.png" alt="Workflow Diagram" width="300"/>
       <p><em>Workflow diagram, from data extraction, loading, to transformation</em></p>
     </div>
     <div>
