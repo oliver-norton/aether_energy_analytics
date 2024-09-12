@@ -11,7 +11,7 @@
       <p><em>Workflow diagram, from data extraction, loading, to transformation</em></p>
     </div>
     <div>
-      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="400"/>
+      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="500"/>
       <p><em>Resulting Tableau dashboard using the transformed data</em></p>
     </div>
   </div>
