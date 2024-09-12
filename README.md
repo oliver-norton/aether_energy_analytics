@@ -17,10 +17,7 @@
   </div>
 </div
   
-
-
-
-## Project Overview
+<strong> ## Project Overview </strong>
 
 This repository contains the necessary components to run the project manually or automatically using GitHub Actions and Docker. Below are the steps to run the project manually (click to expand):
 <details>
