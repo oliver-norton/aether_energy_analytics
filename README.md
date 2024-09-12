@@ -7,11 +7,11 @@
   <div style="text-align: center;">
     <div>
       <img src="./images/workflow.png" alt="Workflow Diagram" width="200"/>
-      <p><em>Workflow Diagram</em></p>
+      <p><em>Workflow diagram, from data extraction, loading, to transformation</em></p>
     </div>
     <div>
       <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="200"/>
-      <p><em>Tableau Dashboard</em></p>
+      <p><em>Resulting Tableau dashboard using the transformed data</em></p>
     </div>
   </div>
 </div>
