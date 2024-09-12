@@ -13,8 +13,9 @@
 
 This repository contains the necessary components to run the project manually or automatically using GitHub Actions and Docker. Below are the steps to run the project manually.
 <details>
+<summary> ## A. Run Project by Hand </summary>
 ### A. Run Project by Hand
-
+  
 #### 1. Create a dbt Project (`/aether_energy_analytics/`)
 - **Create a virtual environment** for running Python and operating dbt:
   ```bash
