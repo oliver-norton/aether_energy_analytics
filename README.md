@@ -11,7 +11,7 @@
       <p><em>Workflow diagram, from data extraction, loading, to transformation</em></p>
     </div>
     <div>
-      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="300"/>
+      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="400"/>
       <p><em>Resulting Tableau dashboard using the transformed data</em></p>
     </div>
   </div>
@@ -21,7 +21,7 @@
 
 This repository contains the necessary components to run the project manually or automatically using GitHub Actions and Docker. Below are the steps to run the project manually (click to expand):
 <details>
-  <summary><strong>A. Run Project by Hand</strong></summary>
+  <summary><strong>A. Run project by hand</strong></summary>
   
 #### 1. Create a dbt Project (`/aether_energy_analytics/`)
 - **Create a virtual environment** for running Python and operating dbt:
@@ -151,7 +151,7 @@ COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL
 
 </details>
 <details>
-<summary><strong> B. Run Using Docker </strong></summary>
+<summary><strong> B. Run automatically using Docker </strong></summary>
 
 Automate the process using GitHub Actions and Docker. The CI (continuous integration) pipeline automates:
 
