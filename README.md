@@ -144,7 +144,7 @@ COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL
 
 </details>
 <details>
-<details><strong>B. Run Using Docker</strong></details>
+<summary><strong> B. Run Using Docker </strong></summary>
 
 Automate the process using GitHub Actions and Docker. The CI (continuous integration) pipeline automates:
 
