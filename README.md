@@ -12,7 +12,7 @@
 ## Project Overview
 
 This repository contains the necessary components to run the project manually or automatically using GitHub Actions and Docker. Below are the steps to run the project manually.
-
+<details>
 ### A. Run Project by Hand
 
 #### 1. Create a dbt Project (`/aether_energy_analytics/`)
@@ -142,7 +142,8 @@ COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL
 
 ![Tableau Dashboard](./images/tableau_dash.png)
 
-
+</details>
+<details>
 ### B. Run Using Docker
 
 Automate the process using GitHub Actions and Docker. The CI (continuous integration) pipeline automates:
@@ -161,3 +162,5 @@ Steps:
 ![Docker](./images/docker.png)
 
 The .github/workflows/docker-image.yml contains the GitHub Actions workflow, while the Dockerfile contains the commands required to build and run the Docker image, including copying files, installing packages, and executing the Python script.
+
+</details>
