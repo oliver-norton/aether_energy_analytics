@@ -6,12 +6,13 @@
   </div>
   <div>
     <img src="./images/workflow.png" alt="drawing" width="300"/>
+    <img src="./images/tableau_dash.png" alt="drawing width="300/>
   </div>
 </div>
 
 ## Project Overview
 
-This repository contains the necessary components to run the project manually or automatically using GitHub Actions and Docker. Below are the steps to run the project manually.
+This repository contains the necessary components to run the project manually or automatically using GitHub Actions and Docker. Below are the steps to run the project manually (click to expand):
 <details>
   <summary><strong>A. Run Project by Hand</strong></summary>
   
@@ -140,7 +141,6 @@ COPY testing.monthly_consumption TO 'monthly_consumption.xlsx' WITH (FORMAT GDAL
 ```
 - View and interact with the Tableau dashboard I created using the data [HERE](https://public.tableau.com/app/profile/john.stokes8166/viz/AetherEnergyAnalytics/aether_2020-2024#1)
 
-![Tableau Dashboard](./images/tableau_dash.png)
 
 </details>
 <details>
