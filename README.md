@@ -5,7 +5,7 @@
   <div style="flex: 1;">
     Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs someone to extract, load, and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center;">
+  <div style="display: flex; align-items: center;">
     <div>
       <img src="./images/workflow.png" alt="Workflow Diagram" width="300"/>
       <p><em>Workflow diagram, from data extraction, loading, to transformation</em></p>
