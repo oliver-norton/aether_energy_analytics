@@ -6,11 +6,11 @@
   </div>
   <div style="text-align: center;">
     <div>
-      <img src="./images/workflow.png" alt="Workflow Diagram" width="300"/>
+      <img src="./images/workflow.png" alt="Workflow Diagram" width="200"/>
       <p><em>Workflow Diagram</em></p>
     </div>
     <div>
-      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="300"/>
+      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="200"/>
       <p><em>Tableau Dashboard</em></p>
     </div>
   </div>
