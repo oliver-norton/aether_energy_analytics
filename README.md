@@ -14,6 +14,10 @@
       <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="500"/>
       <p><em>Resulting Tableau dashboard using the transformed data</em></p>
     </div>
+    <div>
+      <img src="./images/power_BI_vis.png" alt="Power BI Dashboard" width="500"/>
+      <p><em>Similar visualisation using Power BI and additional data</em></p>
+    </div>
   </div>
 </div
   
