@@ -7,19 +7,23 @@
   <p>To create a data pipeline and learn new tools and approaches related to data engineering and analytics engineering.</p>
   
   <h3>Tools Used</h3>
-  <ul>
-    <li>Docker</li>
-    <li>dbt</li>
-    <li>Python</li>
-    <li>Bash scripting</li>
-    <li>SQL</li>
-    <li>Linux</li>
-    <li>Ubuntu</li>
-    <li>Git</li>
-    <li>GitHub Actions</li>
-    <li>Tableau</li>
-    <li>Power BI</li>
-  </ul>
+  <div style="display: flex; justify-content: space-between;">
+    <ul style="list-style-type: none; padding: 0; margin: 0; width: 48%;">
+      <li>Docker</li>
+      <li>dbt</li>
+      <li>Python</li>
+      <li>Bash scripting</li>
+      <li>SQL</li>
+    </ul>
+    <ul style="list-style-type: none; padding: 0; margin: 0; width: 48%;">
+      <li>Linux</li>
+      <li>Ubuntu</li>
+      <li>Git</li>
+      <li>GitHub Actions</li>
+      <li>Tableau</li>
+      <li>Power BI</li>
+    </ul>
+  </div>
   
   <h3>Summary</h3>
   <p>
