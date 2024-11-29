@@ -2,13 +2,34 @@
 
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="flex: 1;">
-  **Goal:** To create a data pipeline and learn new tools and approaches related to data and analytics engineering
+<div style="flex: 1; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9;">
+  <h3 style="margin-top: 0;">Goal</h3>
+  <p>To create a data pipeline and learn new tools and approaches related to data engineering and analytics engineering.</p>
+  
+  <h3>Tools Used</h3>
+  <ul>
+    <li>Docker</li>
+    <li>dbt</li>
+    <li>Python</li>
+    <li>Bash scripting</li>
+    <li>SQL</li>
+    <li>Linux</li>
+    <li>Ubuntu</li>
+    <li>Git</li>
+    <li>GitHub Actions</li>
+    <li>Tableau</li>
+    <li>Power BI</li>
+  </ul>
+  
+  <h3>Summary</h3>
+  <p>
+    Aether Energy is a fictional energy company that has a database of customer data. Aether Energy 
+    needs someone to extract, load, and transform the data in its database to meet the needs of the 
+    business. The transformed database must be in the right structure, with high data integrity, to 
+    allow Data Analysts and BI Specialists to extract actionable insights.
+  </p>
+</div>
 
-  **Tools used:** Docker, dbt, Python, Bash scripting, SQL, Linux, Ubuntu, Git, GitHub actions, Tableau, Power BI
-    
-   ** Summary:** Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs someone to extract, load, and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
-  </div>
   <div style="display: flex; align-items: center;">
     <div style="padding-right: 20px;">
       <img src="./images/workflow.png" alt="Workflow Diagram" width="300"/>
