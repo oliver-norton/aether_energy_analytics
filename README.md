@@ -5,14 +5,11 @@
   <p>To create data pipelines, performing an extract, transform and load (ETL, ELT) processes; and to learn new tools and approaches related to data engineering and analytics engineering.</p>
   
 ### Tools Used
-| Column 1          | Column 2       |
-|--------------------|----------------|
-| Docker            | Linux          |
-| dbt               | Ubuntu         |
-| Python            | Git            |
-| Bash scripting    | GitHub Actions |
-| SQL               | Tableau        |
-|                  | Power BI       |
+| Docker         | Linux          | Git            |
+| dbt            | Ubuntu         | GitHub Actions |
+| Python         | Tableau        | Power BI       |
+| Bash scripting | SQL            |                |
+
   
   <h3>Summary</h3>
   <p>
