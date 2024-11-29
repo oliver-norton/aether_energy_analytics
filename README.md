@@ -1,9 +1,13 @@
-# Welcome to my ‘Aether Energy Analytics’ dbt Project
+# Aether Energy data engineering project
 
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <div style="flex: 1;">
-    Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs someone to extract, load, and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
+  **Goal:** To create a data pipeline and learn new tools and approaches related to data and analytics engineering
+
+  **Tools used:** Docker, dbt, Python, Bash scripting, SQL, Linux, Ubuntu, Git, GitHub actions, Tableau, Power BI
+    
+   ** Summary:** Aether Energy is a fictional energy company that has a database of customer data. Aether Energy needs someone to extract, load, and transform the data in its database to meet the needs of the business. The transformed database needs to be in the right structure, having high data integrity, so that actionable insights can be extracted by Data Analysts and BI Specialists.
   </div>
   <div style="display: flex; align-items: center;">
     <div style="padding-right: 20px;">
