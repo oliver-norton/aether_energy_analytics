@@ -4,24 +4,15 @@
   <h3 style="margin-top: 0;">Goal</h3>
   <p>To create data pipelines, performing an extract, transform and load (ETL, ELT) processes; and to learn new tools and approaches related to data engineering and analytics engineering.</p>
   
-  <h3>Tools Used</h3>
-  <div style="display: flex; gap: 20px;">
-    <ul style="list-style-type: none; padding: 0; margin: 0; flex: 1;">
-      <li>Docker</li>
-      <li>dbt</li>
-      <li>Python</li>
-      <li>Bash scripting</li>
-      <li>SQL</li>
-    </ul>
-    <ul style="list-style-type: none; padding: 0; margin: 0; flex: 1;">
-      <li>Linux</li>
-      <li>Ubuntu</li>
-      <li>Git</li>
-      <li>GitHub Actions</li>
-      <li>Tableau</li>
-      <li>Power BI</li>
-    </ul>
-  </div>
+### Tools Used
+| Column 1          | Column 2       |
+|--------------------|----------------|
+| Docker            | Linux          |
+| dbt               | Ubuntu         |
+| Python            | Git            |
+| Bash scripting    | GitHub Actions |
+| SQL               | Tableau        |
+|                  | Power BI       |
   
   <h3>Summary</h3>
   <p>
