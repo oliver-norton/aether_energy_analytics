@@ -1,10 +1,8 @@
 # Aether Energy data engineering project
 
-
-<div style="display: flex; justify-content: space-between; align-items: center;">
 <div style="flex: 1; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9;">
   <h3 style="margin-top: 0;">Goal</h3>
-  <p>To create a data pipeline and learn new tools and approaches related to data engineering and analytics engineering.</p>
+  <p>To create data pipelines, performing an extract, transform and load (ETL, ELT) processes; and to learn new tools and approaches related to data engineering and analytics engineering.</p>
   
   <h3>Tools Used</h3>
   <div style="display: flex; justify-content: space-between;">
