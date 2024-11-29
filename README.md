@@ -1,3 +1,4 @@
+
 # Aether Energy data engineering project
 
 <div style="flex: 1; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9;">
@@ -23,6 +24,17 @@ Docker, dbt, Python, Bash scripting, Linux, Ubuntu, SQL, Tableau, Git, GitHub ac
     allow Data Analysts and BI Specialists to extract actionable insights.
   </p>
 </div>
+
+## Highlights:
+![Workflow Diagram](./images/workflow.png)  
+*Figure 1: Workflow diagram showcasing the ETL/ELT process.*
+
+![Power BI Visualisation](./images/power_BI_vis.png)  
+*Figure 2: Power BI visualisation presenting key insights from the transformed data.*
+
+![Tableau Dashboard](./images/tableau_dash.png)  
+*Figure 3: A similar dashboard to Figure 2, but using Tableau.*
+
   
 <strong> Project Overview </strong>
 
