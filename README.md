@@ -5,15 +5,15 @@
   <p>To create data pipelines, performing an extract, transform and load (ETL, ELT) processes; and to learn new tools and approaches related to data engineering and analytics engineering.</p>
   
   <h3>Tools Used</h3>
-  <div style="display: flex; justify-content: space-between;">
-    <ul style="list-style-type: none; padding: 0; margin: 0; width: 48%;">
+  <div style="display: flex; gap: 20px;">
+    <ul style="list-style-type: none; padding: 0; margin: 0; flex: 1;">
       <li>Docker</li>
       <li>dbt</li>
       <li>Python</li>
       <li>Bash scripting</li>
       <li>SQL</li>
     </ul>
-    <ul style="list-style-type: none; padding: 0; margin: 0; width: 48%;">
+    <ul style="list-style-type: none; padding: 0; margin: 0; flex: 1;">
       <li>Linux</li>
       <li>Ubuntu</li>
       <li>Git</li>
@@ -31,22 +31,6 @@
     allow Data Analysts and BI Specialists to extract actionable insights.
   </p>
 </div>
-
-  <div style="display: flex; align-items: center;">
-    <div style="padding-right: 20px;">
-      <img src="./images/workflow.png" alt="Workflow Diagram" width="300"/>
-      <p><em>Workflow diagram, from data extraction, loading, to transformation</em></p>
-    </div>
-    <div>
-      <img src="./images/tableau_dash.png" alt="Tableau Dashboard" width="500"/>
-      <p><em>Resulting Tableau dashboard using the transformed data</em></p>
-    </div>
-    <div>
-      <img src="./images/power_BI_vis.png" alt="Power BI Dashboard" width="500"/>
-      <p><em>Similar visualisation using Power BI and additional data</em></p>
-    </div>
-  </div>
-</div
   
 <strong> Project Overview </strong>
 
