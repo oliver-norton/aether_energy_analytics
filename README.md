@@ -1,6 +1,9 @@
 
 # Aether Energy data engineering project
 
+![Workflow Diagram](./images/aether_process.png)  
+*Figure 1: Workflow diagram showcasing the ETL/ELT process.*
+
 <div style="flex: 1; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9;">
   <h3 style="margin-top: 0;">Goal</h3>
   <p>To create data pipelines, performing extract, transform and load (ETL, ELT) processes; and to learn new tools and approaches related to data engineering and analytics engineering.</p>
@@ -26,8 +29,6 @@ Docker, dbt, Python, Bash scripting, Linux, Ubuntu, SQL, Tableau, Git, GitHub ac
 </div>
 
 ## Highlights:
-![Workflow Diagram](./images/aether_process.png)  
-*Figure 1: Workflow diagram showcasing the ETL/ELT process.*
 
 ![Power BI Visualisation](./images/power_BI_vis.png)  
 *Figure 2: Power BI visualisation presenting key insights from the transformed data.*
