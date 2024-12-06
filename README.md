@@ -26,7 +26,7 @@ Docker, dbt, Python, Bash scripting, Linux, Ubuntu, SQL, Tableau, Git, GitHub ac
 </div>
 
 ## Highlights:
-![Workflow Diagram](./images/workflow.png)  
+![Workflow Diagram](./images/aether_process.png)  
 *Figure 1: Workflow diagram showcasing the ETL/ELT process.*
 
 ![Power BI Visualisation](./images/power_BI_vis.png)  
