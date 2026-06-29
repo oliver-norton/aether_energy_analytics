@@ -1,5 +1,5 @@
 
-# Aether Energy data engineering project
+# Aether Energy
 
 ![Workflow Diagram](./images/aether_process.png)  
 *Figure 1: Workflow diagram showcasing the ETL/ELT process.*
@@ -10,14 +10,6 @@
   
 ### Tools Used
 Docker, dbt, Python, Bash scripting, Linux, Ubuntu, SQL, Tableau, Git, GitHub actions, Power BI
-
-### Skills Developed 
-- Data Engineering
-- ETL
-- Analytics engineering
-- Data visualisation
-- Automation
-- Scripting
   
   <h3>Summary</h3>
   <p>
@@ -27,15 +19,6 @@ Docker, dbt, Python, Bash scripting, Linux, Ubuntu, SQL, Tableau, Git, GitHub ac
     allow Data Analysts and BI Specialists to extract actionable insights.
   </p>
 </div>
-
-## Highlights:
-
-![Power BI Visualisation](./images/power_BI_vis.png)  
-*Figure 2: Power BI visualisation presenting key insights from the transformed data.*
-
-![Tableau Dashboard](./images/tableau_dash.png)  
-*Figure 3: A similar dashboard to Figure 2, but using Tableau.*
-
   
 <strong> Project Overview </strong>
 
@@ -191,3 +174,12 @@ Steps:
 The .github/workflows/docker-image.yml contains the GitHub Actions workflow, while the Dockerfile contains the commands required to build and run the Docker image, including copying files, installing packages, and executing the Python script.
 
 </details>
+
+## Visualisations:
+
+![Power BI Visualisation](./images/power_BI_vis.png)  
+*Figure 2: Power BI visualisation presenting key insights from the transformed data.*
+
+![Tableau Dashboard](./images/tableau_dash.png)  
+*Figure 3: A similar dashboard to Figure 2, but using Tableau.*
+
